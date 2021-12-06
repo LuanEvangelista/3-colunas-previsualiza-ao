@@ -1,4 +1,4 @@
-### 3-colunas-previsualização
+### 3-colunas-previsualizacao
 
 Uma Pagina que contem 3 colunas de pré visualização de itens
 
