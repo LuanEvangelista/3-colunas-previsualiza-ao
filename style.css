@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+    /*Colors*/
+
+    /*Primary*/
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+
+    /*Neutral*/
+    --Transparent_white: hsla(0, 0%, 100%, 0.61);/* (paragraphs) */
+    --Very_light_gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+}
+
+body {
+    height: 100vh;
+    font-size: 15px;
+    
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 500px;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+
+.box_1{
+    background-color: var(--Bright_orange);
+    border-radius: 10px 0 0 10px ;
+    display: grid;
+    padding: 2.5rem;
+
+
+}
+
+.box_2{
+    background-color: var(--Dark_cyan);
+    display: grid;
+    padding: 2.5rem;
+}
+
+.box_3{
+    background-color: var(--Very_dark_cyan);
+    border-radius: 0px 10px 10px 0px ;
+    display: grid;
+    padding: 2.5rem;
+}
+    
+.title_style{
+    color: var(--Very_light_gray);
+    font-family: 'Big Shoulders Display';
+    font-size:40px;
+}
+
+.description_style{
+    color: var(--Transparent_white);
+    line-height: 1.5;
+}
+
+
+.button_style{
+  position: relative;
+  padding: 0.75em 1.25em;
+  font-size: 1.0em;
+  border: none;
+  background: none;
+  outline: none;
+  color: black;
+  mix-blend-mode: screen;
+  left: 16px;
+top: 46px;
+    
+}
+
+.button_style::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+  border-radius: 4em;
+  content: '';
+  mix-blend-mode: color-burn;
+  cursor:pointer;
+}
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
